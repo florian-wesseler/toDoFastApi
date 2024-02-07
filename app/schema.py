@@ -12,10 +12,12 @@ class ToDoItemBase(BaseModel):
 class ToDoCreate(ToDoItemBase):
     dueDate: Optional[datetime] = None
 
-# Klassenobjekt für ein ToDo Item
-class ToDoItem(ToDoCreate):
-    id: int
+class ToDoItemUpdate(ToDoCreate):
     done: bool = False
+
+# Klassenobjekt für ein ToDo Item
+class ToDoItem(ToDoItemUpdate):
+    id: int
 
     class Config:
         from_attributes=True

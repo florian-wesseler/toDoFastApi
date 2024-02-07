@@ -161,3 +161,4 @@ sql_app.db
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 app/__pycache__/main.cpython-310.pyc
+app/__pycache__/main.cpython-310.pyc
